@@ -1,0 +1,20 @@
+# Nükleer santral kontrol paneli simülasyonu
+
+# Nükleer santralın durumunu temsil eden bir değişken oluşturun
+santral_durumu = "kapalı"
+
+# Kullanıcıdan bir komut alın
+komut = input("Lütfen bir komut girin (aç/kapat): ")
+
+# Komutu kontrol edin ve nükleer santralın durumunu değiştirin
+if komut == "aç":
+    santral_durumu = "açık"
+    print("Nükleer santral açıldı.")
+elif komut == "kapat":
+    santral_durumu = "kapalı"
+    print("Nükleer santral kapatıldı.")
+else:
+    print("Geçersiz komut.")
+
+# Nükleer santralın durumunu ekrana yazdırın
+print("Nükleer santral durumu:",
